@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <title>المدير | إضافة وجبة جديدة</title>
 </head>
+
 <body>
-  
-  <div class="container">
-      <h1>إضافة وجبة جديدة</h1>
-      <form>
-        <input type="text" placeholder="إسم الوجبة">
-        <input type="text" placeholder="الوصف">
-        <input type="text" placeholder="السعر">
-        <input type="text" placeholder="الصورة">
-        <button type="submit">+ إضافة الوجبة</button>
-      </form>
+
+  <div id="container">
+    <h1>إضافة وجبة جديدة</h1>
+    <form>
+      <input type="text" name="name" placeholder="إسم الوجبة" maxlength="34" required>
+      <input type="text" name="description" placeholder="الوصف" maxlength="44" required>
+      <input type="number" name="price" placeholder="السعر" min="0" max="9999" required>
+      <input type="url" name="image" placeholder="الصورة" required>
+      <button type="submit" id="submit-meal">+ إضافة الوجبة</button>
+    </form>
   </div>
+
 </body>
+
 </html>
